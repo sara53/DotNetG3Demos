@@ -1,0 +1,5 @@
+1- install nodejs 
+2- install typescripe "npm"
+ === npm i -g typescript
+
+3-tsc filename.ts  -w
