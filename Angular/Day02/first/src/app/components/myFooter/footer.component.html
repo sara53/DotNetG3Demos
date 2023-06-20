@@ -1,1 +1,43 @@
-<p>footer works!</p>
+<div class="bg-dark text-light p-5 text-center">
+  <div class="container">
+    <h1>Login Component</h1>
+    <div [ngSwitch]="color">
+      <p *ngSwitchCase="'red'" class="text-danger lead">
+        Your Fav Color is Red
+      </p>
+      <p *ngSwitchCase="'green'" class="text-success lead">
+        Your Fav Color is green
+      </p>
+      <p *ngSwitchCase="'blue'" class="text-primary lead">
+        Your Fav Color is blue
+      </p>
+      <p *ngSwitchDefault class="text-light lead">
+        You don't have any fav color
+      </p>
+    </div>
+    <!-- <p
+      *ngIf="color == 'blue'; else ourDiv"
+      class="bg-light p-5 text-dark rounded m-4"
+    >
+      True Case
+    </p>
+    <ng-template #ourDiv>
+      <span class="bg-secondary p-1 text-dark rounded m-4">false Case</span>
+    </ng-template> -->
+
+    <!-- <ng-container *ngFor="let x of studentsNames; let i = index">
+      <div class="bg-light p-2 rounded m-2 text-dark">
+        <h3>Div :{{ x }} : {{ i }}</h3>
+        <p>
+          Text 1 : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Impedit, iure.
+        </p>
+        <button class="btn btn-outline-dark">Show More !</button>
+      </div>
+    </ng-container> -->
+    <!-- <select>
+      <option *ngFor="let trackName of trackNames">{{ trackName }}</option>
+    </select> -->
+    <!-- <input #myH1 type="text" (input)="getInputValue(myH1.value)" /> -->
+  </div>
+</div>

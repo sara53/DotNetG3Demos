@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'first';
+  parentData: string = 'Data From Parent Component';
+  products: { id: number; pName: string }[] = [
+    { id: 1, pName: 'sumsung' },
+    { id: 2, pName: 'laptop' },
+  ];
 }

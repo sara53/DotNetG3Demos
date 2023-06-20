@@ -1,10 +1,28 @@
-<section>
-  <h2>Our Content</h2>
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo repellat
-    nesciunt culpa assumenda. Quaerat, eum! Maiores ad veritatis laboriosam
-    ullam distinctio maxime iusto, quam eveniet sequi, dolor, reprehenderit nemo
-    voluptates.
-  </p>
-  <button>Show More !!</button>
+<section class="bg-light p-5 text-center">
+  <div class="container">
+    <input
+      type="text"
+      class="form-control mb-2"
+      placeholder=" Enter Your Name"
+      [(ngModel)]="inputValue"
+    />
+    <input
+      type="text"
+      class="form-control mb-2"
+      [(ngModel)]="age"
+      placeholder="Enter you age"
+    />
+
+    <select [(ngModel)]="selectValue">
+      <option>Html</option>
+      <option>CSS</option>
+      <option>JS</option>
+    </select>
+    <p>
+      Result will be here :<strong class="text-danger">{{
+        selectValue
+      }}</strong>
+    </p>
+    <button class="btn btn-warning">Show More !!</button>
+  </div>
 </section>

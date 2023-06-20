@@ -9,10 +9,24 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { GallaryComponent } from './components/gallary/gallary.component';
+import { FormsModule } from '@angular/forms';
+import { TodosComponent } from './components/todos/todos.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ContentComponent, FooterComponent, SliderComponent, ProductsComponent, ProductItemComponent, GallaryComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ContentComponent,
+    FooterComponent,
+    SliderComponent,
+    ProductsComponent,
+    ProductItemComponent,
+    GallaryComponent,
+    TodosComponent,
+    LoginComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

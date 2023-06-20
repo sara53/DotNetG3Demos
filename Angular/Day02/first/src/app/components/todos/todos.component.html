@@ -1,0 +1,63 @@
+<div class="bg-dark p-5 text-center text-light">
+  <div class="container">
+    <h1>Todos List</h1>
+    <div class="row">
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Your Key"
+          name="key"
+          [(ngModel)]="inputValue"
+        />
+      </div>
+      <div class="col-sm-2">
+        <i
+          (click)="addToTodo()"
+          class="fs-1 text-success bi bi-plus-square-fill"
+        ></i>
+      </div>
+    </div>
+    <div *ngFor="let todo of todosList; let i = index" class="row mt-4">
+      <div class="col-sm-10">
+        <p class="bg-secondary rounded p-1">{{ todo }}</p>
+      </div>
+      <div class="col-sm-2">
+        <i
+          (click)="remove(i)"
+          class="fs-1 text-danger bi bi-file-earmark-x-fill"
+        ></i>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- <p
+      class="p-4"
+      [ngStyle]="{
+        backgroundColor: show ? 'green' : 'red',
+        color: show ? '#fff' : '#000',
+      }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore rerum,
+      accusantium velit temporibus in accusamus. Magnam sequi ut, nisi expedita
+      sapiente asperiores nulla ab, numquam perspiciatis quam optio autem.m
+    </p> -->
+
+    <!-- <p [class.jsClass]="show">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sapiente
+      reiciendis repellendus eaque ad, dolores ab incidunt error quibusdam nam
+      explicabo hic eveniet facere mollitia exercitationem illum harum iure vel?
+    </p> -->
+    <!-- <p
+      [ngClass]="{
+        jsClass: show,
+        'bg-danger': !show
+      }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sapiente
+      reiciendis repellendus eaque ad, dolores ab incidunt error quibusdam nam
+      explicabo hic eveniet facere mollitia exercitationem illum harum iure vel?
+    </p> -->
+    <!-- <button (click)="toggle()" class="btn btn-warning">Toggle</button> -->
+  </div>
+</div>

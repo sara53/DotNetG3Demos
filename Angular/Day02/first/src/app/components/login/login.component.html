@@ -1,0 +1,11 @@
+<div class="alert alert-info p-5">
+  <div class="container">
+    <h1>Login Component</h1>
+    <p>
+      Data : <strong class="text-danger fs-1">{{ childData }}</strong>
+    </p>
+    <p *ngFor="let product of productList" class="bg-light p-3 rounded">
+      {{ product.pName }}
+    </p>
+  </div>
+</div>
