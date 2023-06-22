@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "sumsung",
+      "price": 300,
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "productName": "Pen",
+      "price": 100,
+      "quantity": 690
+    },
+    {
+      "id": 3,
+      "productName": "phone",
+      "price": 5000,
+      "quantity": 30
+    },
+    {
+      "id": 4,
+      "productName": "Book",
+      "price": 120,
+      "quantity": 66
+    },
+    {
+      "productName": "window",
+      "price": 120,
+      "quantity": 66,
+      "id": 5
+    },
+    {
+      "productName": "watch",
+      "price": "200",
+      "quantity": "55",
+      "id": 6
+    },
+    {
+      "productName": "new Product",
+      "price": "55",
+      "quantity": "44",
+      "id": 7
+    }
+  ]
+}

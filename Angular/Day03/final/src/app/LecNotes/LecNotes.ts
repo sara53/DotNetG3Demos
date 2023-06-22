@@ -9,4 +9,11 @@
  * --------------------------------------
  * == Routing
  *
+ *
+ * -------------------------
+ *
+ *  == Services
+ *  == reactive Form
+ *  == build json server
+ *  == Connect With API (CRUD Operation)
  */
